@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #171717;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background: #171717;
+  position: fixed;
+  box-shadow: 0 3px 4px -4px #fff;
+}
+
+nav img {
+  width: 70px;
+  margin-left: 100px;
+}
+
+nav .nav-list {
+  list-style: none;
+}
+
+nav .nav-list .nav-item {
+  display: inline;
+}
+
+nav .nav-list .nav-item a {
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav .nav-list .nav-item:nth-child(3) a {
+  margin-right: 100px;
+}
+
+nav .nav-list .nav-item a:hover {
+  background: #f5f5f5;
+  color: #171717;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+nav .nav-list .nav-item:nth-child(1) a:hover::after {
+  content: "Ana Sayfa";
+  padding-left: 10px;
+}
+
+nav .nav-list .nav-item:nth-child(2) a:hover::after {
+  content: "Hakkımda";
+  padding-left: 10px;
+}
+
+nav .nav-list .nav-item:nth-child(3) a:hover::after {
+  content: "İletişim";
+  padding-left: 10px;
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.introduction-list {
+  list-style: none;
+  margin-left: 100px;
+}
+
+.introduction-list .introduction-item {
+  color: #fff;
+  font-size: 25px;
+}
+
+.introduction-list .introduction-item span {
+  color: #7f62ff;
+  font-weight: bold;
+}
+
+.introduction-list .introduction-item h1 {
+  font-size: 40px;
+  border-bottom: 3px solid #5e3aff;
+}
+
+.introduction-list .social-list {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.introduction-list .social-list .social-item {
+  display: inline;
+  padding: 15px;
+}
+
+.introduction-list .social-list .social-item a {
+  color: #fff;
+}
+
+.introduction-list .social-list .social-item a i {
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.introduction-list .social-list .social-item a i:hover {
+  transform: rotate(360deg);
+  font-size: 30px;
+  color: #7252ff;
+}
+
+.home-section svg {
+  width: 50%;
+  margin-right: 100px;
+  box-shadow: 0 4px 6px -6px #fff;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+}
+
+
+
+.about-section svg {
+  margin-left: 100px;
+  width: 80%;
+  box-shadow: 0 4px 6px -6px #fff;
+}
+
+
+.about-section p {
+  margin-right: 100px;
+  color: #fff;
+}
+
+.about-section p span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Contact Codes */
+#contact {
+  display: flex;
+  justify-content: start;
+  padding: 30px 10%;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+
+span{
+  color: #5e3aff;
+}
+
+
+#contact form {
+  width: 100%;
+}
+
+#contact form .form_item {
+  width: 100%;
+  height: 30px;
+  color: rgb(119, 119, 119);
+  outline: none;
+  border: 1px solid #316769;
+  box-shadow: #316769 0px 1px 10px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#contact form .form_item.name {
+  width: 40%;
+}
+
+#contact form .form_item.email {
+  width: 60%;
+}
+
+#contact form .form_item.message {
+  width: 80%;
+  height: 150px;
+}
+
+#contact form button {
+  outline: none;
+  border: 1px solid #316769;
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  box-shadow: #316769 0px 1px 10px;
+  margin-right: auto;
+}
+
+#contact form button:hover {
+  cursor: pointer;
+  background: #5e3aff;
+
+}
+
+h3{color: #5e3aff;}
+
+
+h3 span{
+  color: #fff;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 8px; /*genislik 10px olsun*/
+	background-color: #171717; /*scrollbar arkaplan renk*/
+	border-left: 1px solid #171717  /*arkaplan sol tarafa cizgi cek*/
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #fff; /*scrollbar renk*/
+	border-radius: 25px /*oval olsun*/
+}
+
+::-webkit-scrollbar-thumb:hover { /*tiklandiginda*/
+	background-color: #7252ff;
+}
+
+
+
+@media screen and (max-width:700px){
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #171717;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background: #171717;
+  position: fixed;
+  box-shadow: 0 3px 4px -4px #fff;
+}
+
+nav img {
+  width: 50px;
+  margin-left: 40px;
+}
+
+nav .nav-list {
+  list-style: none;
+}
+
+nav .nav-list .nav-item {
+  display: inline;
+}
+
+nav .nav-list .nav-item a {
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav .nav-list .nav-item:nth-child(3) a {
+  margin-right: 40px;
+}
+
+nav .nav-list .nav-item a:hover {
+  background: #f5f5f5;
+  color: #171717;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+nav .nav-list .nav-item:nth-child(1) a:hover::after {
+  content: "Ana Sayfa";
+  padding-left: 10px;
+}
+
+nav .nav-list .nav-item:nth-child(2) a:hover::after {
+  content: "Hakkımda";
+  padding-left: 10px;
+}
+
+nav .nav-list .nav-item:nth-child(3) a:hover::after {
+  content: "İletişim";
+  padding-left: 10px;
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.introduction-list {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.introduction-list .introduction-item {
+  color: #fff;
+  font-size: 16px;
+}
+
+.introduction-list .introduction-item span {
+  color: #7f62ff;
+  font-weight: bold;
+}
+
+.introduction-list .introduction-item h1 {
+  font-size: 20px;
+  border-bottom: 3px solid #5e3aff;
+}
+
+.introduction-list .social-list {
+  list-style: none;
+  margin-top: 24px;
+}
+
+.introduction-list .social-list .social-item {
+  display: inline;
+  padding: 16.4px;
+}
+
+.introduction-list .social-list .social-item a {
+  color: #fff;
+}
+
+.introduction-list .social-list .social-item a i {
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+
+.introduction-list .social-list .social-item a i:hover {
+  transform: rotate(360deg);
+  font-size: 30px;
+  color: #7252ff;
+}
+
+.home-section svg {
+  width: 0%;
+  margin-right: 0px;
+  box-shadow: 0 4px 6px -6px #fff;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+
+
+.about-section svg {
+  margin-left: 0px;
+  width: 0%;
+  box-shadow: 0 4px 6px -6px #fff;
+}
+
+
+.about-section p {
+  margin-left: 6px;
+  margin-right: 150px;
+  color: #fff;
+}
+
+.about-section p span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 0px;
+}
+
+/* Contact Codes */
+#contact {
+  display: flex;
+  justify-content: start;
+  padding: 30px 10%;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+
+span{
+  color: #5e3aff;
+}
+
+
+#contact form {
+  width: 100%;
+}
+
+#contact form .form_item {
+  width: 100%;
+  height: 10px;
+  color: rgb(119, 119, 119);
+  outline: none;
+  border: 2px solid #316769;
+  box-shadow: #316769 0px 1px 10px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#contact form .form_item.name {
+  width: 40%;
+}
+
+#contact form .form_item.email {
+  width: 60%;
+}
+
+#contact form .form_item.message {
+  width: 80%;
+  height: 150px;
+}
+
+#contact form button {
+  outline: none;
+  border: 1px solid #316769;
+  border-radius: 56px;
+  padding: 10px 26px;
+  margin-bottom: 20px;
+  box-shadow: #316769 0px 1px 10px;
+  margin-right: auto;
+}
+
+#contact form button:hover {
+  cursor: pointer;
+  background: #5e3aff;
+
+}
+
+h3{color: #5e3aff;}
+
+
+h3 span{
+  color: #fff;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 8px; /*genislik 10px olsun*/
+	background-color: #171717; /*scrollbar arkaplan renk*/
+	border-left: 1px solid #171717  /*arkaplan sol tarafa cizgi cek*/
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #fff; /*scrollbar renk*/
+	border-radius: 25px /*oval olsun*/
+}
+
+::-webkit-scrollbar-thumb:hover { /*tiklandiginda*/
+	background-color: #7252ff;
+}
+}
+
